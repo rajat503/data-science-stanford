@@ -16,8 +16,9 @@ for line in f:
 		k=k.lower()
 		k=k.replace(' ','_')
 		k=k.replace('__','_')
+		k=k+".txt"
 		print(s[2]+"	float	text	"+k+'	no answers	false')
-		w=open("assets/"+k+".txt", 'w')
+		w=open("assets/"+k, 'w')
 		w.write(s[1])
 		w.close()
 	i+= 1
